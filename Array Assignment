@@ -1,0 +1,48 @@
+ // 1) Remove first element from places array and print the remaining array
+ //result = ['gurgaon','jaipur','pune']
+
+    const places = ['delhi','gurgaon','jaipur','pune']
+    places.shift()
+     console.log(places)
+
+ //2) insert that element at the start of the morePlaces array and print the new array
+ //  result = ['delhi','kochi','hyderabad','shimla','srinagar'] 
+    
+    const morePlaces = ['kochi','hyderabad','shimla','srinagar']
+     morePlaces.splice(0,0,'delhi')
+     console.log(morePlaces)
+
+  //  3) take out last three element from the morePlacesArray and take out first three elements
+   //  from the places array and print the combined array
+   //   result = ['hyderabad','shimla','srinagar','delhi','gurgaon','jaipur']
+
+      const places = ['delhi', 'gurgaon', 'jaipur', 'pune']
+      const morePlaces = ['kochi', 'hyderabad', 'Shimla', 'Srinagar']
+
+      let morePlaces1 = morePlaces.slice(1,4) 
+      let places1 = places.slice(0,3) 
+      let result = morePlaces1.concat(places1)
+      console.log(result)
+
+
+ // 4) destructure and store pincode into variable name myPincode
+
+     const myData = { 
+         name: "Rahul",
+         age: 20,
+          gender : "male",
+         address: {     
+           pincode: 124355,
+            city: "delhi"
+     },
+     likes:["music","movies"]
+    }
+     let myPincode = myData.address.pincode
+      
+       console.log(myPincode)
+
+//  5.
+ // destructure and store second like into a vaiable named myLike
+
+      let myLike = myData.likes[1]
+      console.log(myLike)
